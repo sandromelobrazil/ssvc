@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assessment</title>
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+
+	<!-- Bootstrap 4 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<!-- https://getbootstrap.com/docs/4.6/layout/grid/ -->
+			<!-- https://getbootstrap.com/docs/4.6/components/card/ -->
+			<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 py-5">
+
+<div class="card" id="cardExplotationVulnerability">
+	<div class="card-header text-center">
+		Explotation Vulnerability
+	</div>
+	<div class="card-body" style="background-color: antiquewhite;">
+		<h5 class="card-title">Active - Proof of Concept</h5>
+
+		<ul>
+			<li><b>Proof of Concept (PoC)</b>: xxx</li>
+			<li><b>Functional</b>: xxx</li>
+			<li><b>High</b>: xxx</li>
+		</ul>
+
+		<select id="active" class="form-control">
+			<option value="0" selected="selected">Not Defined</option>
+			<option value="1">Proof of Concept (PoC)</option>
+			<option value="2">Functional (F)</option>
+			<option value="3">High (H)</option>
+		</select>
+
+		<hr class="my-5">
+
+		<h5 class="card-title">POC - Proof of Concept</h5>
+
+		<ul>
+			<li><b>Proof of Concept (PoC)</b>: xxx</li>
+			<li><b>Functional</b>: xxx</li>
+			<li><b>High</b>: xxx</li>
+		</ul>
+
+		<select id="poc" class="form-control">
+			<option value="0" selected="selected">Not Defined</option>
+			<option value="1">Proof of Concept (PoC)</option>
+			<option value="2">Functional (F)</option>
+			<option value="3">High (H)</option>
+		</select>
+
+		<hr class="my-5">
+
+		<h5 class="card-title">None</h5>
+
+		<ul>
+			<li><b>Proof of Concept (PoC)</b>: xxx</li>
+			<li><b>Functional</b>: xxx</li>
+			<li><b>High</b>: xxx</li>
+		</ul>
+
+		<select id="none" class="form-control">
+			<option value="0" selected="selected">Not Defined</option>
+			<option value="1">Unproven</option>
+		</select>
+
+		<hr class="my-5">
+
+		<h5 class="card-title">In the Wild</h5>
+
+		<select id="inTheWild" class="form-control">
+			<option value="0" selected="selected">No</option>
+			<option value="1">Yes</option>
+		</select>
+
+	</div>
+	<div class="card-footer text-center">
+		<button class="btn btn-primary" onclick="finishExplotationVulnerability()">Next &gt;</button>
+	</div>
+</div>
+
+<div class="card" id="card2" style="display: none;">
+	<div class="card-header text-center">
+		Explotation Vulnerability 2
+	</div>
+	<div class="card-body" style="background-color: aquamarine;">
+
+		Teste
+
+	</div>
+	<div class="card-footer text-center">
+		<button class="btn btn-outline-primary" onclick="showCard('cardExplotationVulnerability')">&lt; Previous</button>
+		<button class="btn btn-primary" onclick="finishCard2()">Next &gt;</button>
+	</div>
+</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
